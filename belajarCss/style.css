@@ -48,6 +48,7 @@ table {
 }
 
 /* mulai */
+
 body{
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
@@ -56,11 +57,13 @@ body{
 } 
 
 .container{
-    width: 800px;
-    margin: auto;
+    width: 960px;
+    margin: 80px auto;
     background-color: white;
+    position: relative;
 }
 
+/* header */
 .header{
     padding:20px;
     padding-bottom: 10px;
@@ -90,42 +93,50 @@ body{
 }
 
 .hero{
-    height: 280px;
+    height: 320px;
     background-image: url('img/hero.jpg');
     background-size: cover;
-    background-position: 0 -100px;
+    background-position: 0 -180px;
     border-bottom: 5px solid lightskyblue;
     border-top: 5px solid salmon;
 }
 
-.content{
+
+/* main */ 
+
+.main{
     padding:20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
 }
 
-.content h2{
+.main h2{
     font-size: 28px;
     font-weight: bold;
 }
 
-.content .penulis{
+.main .penulis{
     font-size: 11px;
     margin-top: -5px;
 }
 
-.content .penulis a{
+.main .penulis a{
     color: salmon;
     text-decoration: none;
 }
 
-.content .penulis a:hover{
+.main .penulis a:hover{
     color:white;
     background-color: lightskyblue;
 }
 
-.content p{
+.main p{
     margin-bottom: 20px;
     font-size: 14px;
 }
+
+/* footer */
 
 .footer{
     background-color: #333333;
@@ -136,4 +147,63 @@ body{
     color: #eaeaea;
     text-align: center;
     font-size: 12px;
+}
+
+/* sidebar */
+
+.sidebar{
+    width: 300px;
+    padding: 12px;
+    float: right;;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h3{
+    font-weight: bold;
+    columns: #666666;
+}
+
+.sidebar img{
+    float: left;
+    width:70px;
+    height: 70px;
+    padding-right: 10px;
+}
+
+.sidebar p{
+    font-size: 12px;
+    line-height: 18px;
+    font-family: arial, sans-serif;
+}
+
+/* clear */
+.clear{
+    clear: both;
+}
+
+.twitter{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-indent: -9999px;
+    background-image: url(img/twitter.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-16px;
+    right: -76px;
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: lightskyblue;
+    border-bottom:  salmon 3px  solid;
+    z-index: 1;
+    padding-top: 5px;
+    padding-left: 100px;
+    box-sizing: border-box;
 }
